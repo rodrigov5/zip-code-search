@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Variables Color*/
+:root {
+    --background-color: #222;
+
+    --input-bg-color: #fff;
+    --input-text-color: #070707;
+    --button-text-color: #fff;
+}
+
+body {
+    width: 99%;
+    background-color: var(--background-color);
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    height: 32rem;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: .5rem;
+}
+ 
+.search__content-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#button, #close--modal {
+    margin-top: .5rem;
+    height: 2rem;
+    width: 7.875rem;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: .3rem;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+}
+
+#button:hover, #close--modal:hover {
+    color: #fff;
+    background-color: #7f8ff4;
+    transition: .2s;
+
+}
+
+input {
+    width: 150px;
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+    font-size: 1.6rem;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border: 0;
+    outline: 0;
+    padding: 15px 35px 15px 15px;
+    border-radius: .2rem;
+}
+
+.search__content--result {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal__bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(235, 27, 27, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .4s, opacity 0.2s;
+}
+
+.bg__active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background-color: rgb(31, 28, 28);
+    width: 30rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.modal h1 {
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+.modal h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0;
+    margin-top: 1rem;
+    color: rgb(185, 183, 183);
+}
