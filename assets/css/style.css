@@ -107,7 +107,7 @@ input {
 }
 
 .modal h1 {
-    padding: 0;
+    padding: 0.1;
     margin: 0;
     color: rgb(255, 255, 255);
 }
