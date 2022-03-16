@@ -34,5 +34,3 @@ button.addEventListener("click", searchCep);
 modalClose.addEventListener("click", () => {
   modalBg.classList.remove("bg__active");
 });
-
-// olá amigo bão?
